@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1mD-yH-D0Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ciL-BL-Px0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FaceKi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MyCocoaPodLibraryBps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +35,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddv-BE-S46" customClass="UIButtonCustomClass" customModule="FaceKi" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddv-BE-S46" customClass="UIButtonCustomClass" customModule="MyCocoaPodLibraryBps" customModuleProvider="target">
                                 <rect key="frame" x="147" y="798" width="120" height="34"/>
                                 <color key="backgroundColor" red="0.27542012929999998" green="0.29671144490000001" blue="0.37094759939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -93,32 +93,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="72"/>
+            <point key="canvasLocation" x="2047.826086956522" y="70.982142857142847"/>
         </scene>
         <!--CameraS CannerVC-->
         <scene sceneID="ZMe-Bo-5l3">
             <objects>
-                <viewController storyboardIdentifier="CameraSCannerVC" id="TDX-7H-LYj" customClass="CameraSCannerVC" customModule="FaceKi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraSCannerVC" id="TDX-7H-LYj" customClass="CameraSCannerVC" customModule="MyCocoaPodLibraryBps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n3U-u8-Y3I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aA-rv-H97" customClass="UIViewCustomClass" customModule="FaceKi" customModuleProvider="target">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aA-rv-H97" customClass="UIViewCustomClass" customModule="MyCocoaPodLibraryBps" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 2 copy 8" translatesAutoresizingMaskIntoConstraints="NO" id="Max-JL-Fee">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 2 copy 8" translatesAutoresizingMaskIntoConstraints="NO" id="MF3-ZQ-K4c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="Tbs-Og-Q7d"/>
+                                    <constraint firstAttribute="height" constant="180" id="o8O-Hr-Y3Q"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 2 copy 8" translatesAutoresizingMaskIntoConstraints="NO" id="GGH-m9-c3h">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 2 copy 8" translatesAutoresizingMaskIntoConstraints="NO" id="GGH-m9-c3h">
                                 <rect key="frame" x="0.0" y="180" width="414" height="716"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sacn your ID Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppr-do-V7W">
@@ -161,7 +161,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dl-a1-XVo">
-                                <rect key="frame" x="153.5" y="552" width="107" height="110"/>
+                                <rect key="frame" x="153.5" y="732" width="107" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9p-c4-RCi">
                                         <rect key="frame" x="23.5" y="5" width="60" height="60"/>
@@ -195,7 +195,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place your ID card within the frame, and make sure it's clear with no reflections" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcb-mW-NhQ">
-                                <rect key="frame" x="20" y="473.5" width="374" height="38.5"/>
+                                <rect key="frame" x="20" y="223.5" width="374" height="468.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="dgz-5U-Hq3"/>
                                 </constraints>
@@ -204,7 +204,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-jn-z3G">
-                                <rect key="frame" x="295.5" y="430" width="98.5" height="24"/>
+                                <rect key="frame" x="295.5" y="180" width="98.5" height="24"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-8r-NhK">
                                         <rect key="frame" x="58.5" y="2" width="40" height="20"/>
@@ -238,23 +238,24 @@
                             <constraint firstItem="GGH-m9-c3h" firstAttribute="leading" secondItem="RU9-pI-Jae" secondAttribute="leading" id="4Ul-hm-Tu7"/>
                             <constraint firstItem="7Dl-a1-XVo" firstAttribute="top" secondItem="Dcb-mW-NhQ" secondAttribute="bottom" constant="40" id="4ab-uK-pq3"/>
                             <constraint firstItem="5aA-rv-H97" firstAttribute="top" secondItem="n3U-u8-Y3I" secondAttribute="top" id="4qN-RS-Y61"/>
-                            <constraint firstItem="Max-JL-Fee" firstAttribute="leading" secondItem="RU9-pI-Jae" secondAttribute="leading" id="6cV-of-Gvh"/>
+                            <constraint firstItem="MF3-ZQ-K4c" firstAttribute="top" secondItem="n3U-u8-Y3I" secondAttribute="top" id="91u-9p-JlG"/>
                             <constraint firstItem="Dcb-mW-NhQ" firstAttribute="top" secondItem="Wqk-jn-z3G" secondAttribute="bottom" constant="19.5" id="Atd-sN-eSF"/>
                             <constraint firstItem="XJR-7D-lW2" firstAttribute="top" secondItem="Ppr-do-V7W" secondAttribute="bottom" constant="20" id="C8a-AM-Tdc"/>
                             <constraint firstAttribute="bottom" secondItem="5aA-rv-H97" secondAttribute="bottom" id="Cqi-2h-gOs"/>
                             <constraint firstItem="Ppr-do-V7W" firstAttribute="centerX" secondItem="RU9-pI-Jae" secondAttribute="centerX" id="DYe-rz-IyK"/>
                             <constraint firstItem="Ppr-do-V7W" firstAttribute="top" secondItem="RU9-pI-Jae" secondAttribute="top" constant="30" id="Ehx-6K-fl7"/>
                             <constraint firstItem="5aA-rv-H97" firstAttribute="leading" secondItem="RU9-pI-Jae" secondAttribute="leading" id="HKa-AX-xEB"/>
-                            <constraint firstItem="Max-JL-Fee" firstAttribute="top" secondItem="n3U-u8-Y3I" secondAttribute="top" id="JPg-5h-XId"/>
                             <constraint firstAttribute="bottom" secondItem="GGH-m9-c3h" secondAttribute="bottom" id="K8X-Ma-Urg"/>
                             <constraint firstItem="GGH-m9-c3h" firstAttribute="trailing" secondItem="RU9-pI-Jae" secondAttribute="trailing" id="KP0-5m-2jQ"/>
                             <constraint firstItem="RU9-pI-Jae" firstAttribute="trailing" secondItem="5aA-rv-H97" secondAttribute="trailing" id="LVN-zh-Agn"/>
-                            <constraint firstItem="Wqk-jn-z3G" firstAttribute="top" secondItem="GGH-m9-c3h" secondAttribute="top" constant="250" id="MUS-BJ-skd"/>
+                            <constraint firstItem="MF3-ZQ-K4c" firstAttribute="trailing" secondItem="RU9-pI-Jae" secondAttribute="trailing" id="LaO-zN-Kkd"/>
                             <constraint firstItem="XJR-7D-lW2" firstAttribute="centerX" secondItem="Ppr-do-V7W" secondAttribute="centerX" id="RqR-fC-Jup"/>
+                            <constraint firstItem="RU9-pI-Jae" firstAttribute="bottom" secondItem="7Dl-a1-XVo" secondAttribute="bottom" constant="20" id="SxS-TA-gjm"/>
                             <constraint firstItem="RU9-pI-Jae" firstAttribute="trailing" secondItem="Wqk-jn-z3G" secondAttribute="trailing" constant="20" id="ahU-CZ-IOH"/>
-                            <constraint firstItem="Max-JL-Fee" firstAttribute="trailing" secondItem="RU9-pI-Jae" secondAttribute="trailing" id="bdx-Df-vAn"/>
                             <constraint firstItem="GGH-m9-c3h" firstAttribute="top" secondItem="n3U-u8-Y3I" secondAttribute="top" constant="180" id="deA-58-BLR"/>
+                            <constraint firstItem="Wqk-jn-z3G" firstAttribute="top" secondItem="GGH-m9-c3h" secondAttribute="top" id="ixS-0i-G8K"/>
                             <constraint firstItem="RU9-pI-Jae" firstAttribute="trailing" secondItem="Dcb-mW-NhQ" secondAttribute="trailing" constant="20" id="nAk-tV-WPc"/>
+                            <constraint firstItem="MF3-ZQ-K4c" firstAttribute="leading" secondItem="RU9-pI-Jae" secondAttribute="leading" id="qzr-Y3-TJW"/>
                             <constraint firstItem="Dcb-mW-NhQ" firstAttribute="leading" secondItem="RU9-pI-Jae" secondAttribute="leading" constant="20" id="yQm-Zu-cWa"/>
                             <constraint firstItem="7Dl-a1-XVo" firstAttribute="centerX" secondItem="5aA-rv-H97" secondAttribute="centerX" id="zFK-rJ-LMk"/>
                         </constraints>
@@ -264,19 +265,19 @@
                         <outlet property="backCamView" destination="5aA-rv-H97" id="jwh-vt-EBU"/>
                         <outlet property="headTitleLbl" destination="Ppr-do-V7W" id="78T-hZ-SZR"/>
                         <outlet property="infoLbl" destination="Dcb-mW-NhQ" id="0ww-q1-rX2"/>
-                        <outlet property="logoTopConstraint" destination="MUS-BJ-skd" id="q5G-SJ-0Mx"/>
+                        <outlet property="logoTopConstraint" destination="ixS-0i-G8K" id="4D4-Z9-DEH"/>
                         <outlet property="sidePlaceholderImgView" destination="Lhe-tn-24j" id="sub-oa-y0x"/>
                         <outlet property="sideTextLbl" destination="sSD-oQ-dyr" id="M8x-Bo-or0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cef-mD-iSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2404" y="72"/>
+            <point key="canvasLocation" x="3786.9565217391309" y="68.973214285714278"/>
         </scene>
         <!--Check ReadablityVC-->
         <scene sceneID="BdZ-D3-lty">
             <objects>
-                <viewController storyboardIdentifier="CheckReadablityVC" id="eXn-nw-BXG" customClass="CheckReadablityVC" customModule="FaceKi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckReadablityVC" id="eXn-nw-BXG" customClass="CheckReadablityVC" customModule="MyCocoaPodLibraryBps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jo0-hO-Ima">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,7 +294,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Dxo-It-f48">
                                 <rect key="frame" x="20" y="542" width="374" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gC-Yh-fml" customClass="UIButtonCustomClass" customModule="FaceKi" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gC-Yh-fml" customClass="UIButtonCustomClass" customModule="MyCocoaPodLibraryBps" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="RETAKE">
@@ -314,7 +315,7 @@
                                             <action selector="retakeBtnAction:" destination="eXn-nw-BXG" eventType="touchUpInside" id="G6u-Es-Erc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqR-KD-GjP" customClass="UIButtonCustomClass" customModule="FaceKi" customModuleProvider="target">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqR-KD-GjP" customClass="UIButtonCustomClass" customModule="MyCocoaPodLibraryBps" customModuleProvider="target">
                                         <rect key="frame" x="197" y="0.0" width="177" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -341,7 +342,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ANU-Vn-MCF"/>
                                 </constraints>
                             </stackView>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHu-Mp-Q1j" customClass="UIViewCustomClass" customModule="FaceKi" customModuleProvider="target">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHu-Mp-Q1j" customClass="UIViewCustomClass" customModule="MyCocoaPodLibraryBps" customModuleProvider="target">
                                 <rect key="frame" x="20" y="118" width="374" height="295.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8YO-Rp-jR7">
@@ -401,7 +402,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hcd-IH-eko"/>
-                        <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.71739619970000001" green="0.71378874780000001" blue="0.71360093359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DHu-Mp-Q1j" firstAttribute="top" secondItem="iCE-xr-lxQ" secondAttribute="bottom" constant="20" id="4Ji-D0-22Y"/>
                             <constraint firstItem="DHu-Mp-Q1j" firstAttribute="leading" secondItem="Jo0-hO-Ima" secondAttribute="leading" constant="20" id="F9o-9c-ufF"/>
@@ -425,17 +426,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8L-vy-5rU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3077" y="72"/>
+            <point key="canvasLocation" x="4655.072463768116" y="67.633928571428569"/>
         </scene>
         <!--Take SelfieVC-->
         <scene sceneID="5UD-JS-cTX">
             <objects>
-                <viewController storyboardIdentifier="TakeSelfieVC" id="Qfx-K8-Rrq" customClass="TakeSelfieVC" customModule="FaceKi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TakeSelfieVC" id="Qfx-K8-Rrq" customClass="TakeSelfieVC" customModule="MyCocoaPodLibraryBps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DBW-Og-Hu5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ao5-qV-U53" customClass="CustomOval" customModule="FaceKi" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ao5-qV-U53" customClass="CustomOval" customModule="MyCocoaPodLibraryBps" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -444,9 +445,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 2 copy 9" translatesAutoresizingMaskIntoConstraints="NO" id="mHG-73-RE8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TaleSelfie" translatesAutoresizingMaskIntoConstraints="NO" id="mHG-73-RE8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a Selfie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aft-fN-nyL">
                                 <rect key="frame" x="152.5" y="74" width="109.5" height="24"/>
@@ -546,12 +546,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3h-RG-49L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771" y="72"/>
+            <point key="canvasLocation" x="2939.130434782609" y="69.642857142857139"/>
         </scene>
         <!--Final ResultVC-->
         <scene sceneID="65b-e8-Oe5">
             <objects>
-                <viewController storyboardIdentifier="FinalResultVC" id="RMA-67-V4Y" customClass="FinalResultVC" customModule="FaceKi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinalResultVC" id="RMA-67-V4Y" customClass="FinalResultVC" customModule="MyCocoaPodLibraryBps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kn1-E7-Gq7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -597,40 +597,12 @@
                                     <constraint firstAttribute="height" constant="150" id="rFR-03-apS"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnI-Po-qRd" customClass="UIButtonCustomClass" customModule="FaceKi" customModuleProvider="target">
-                                <rect key="frame" x="132" y="798" width="150" height="34"/>
-                                <color key="backgroundColor" red="0.27542012929999998" green="0.29671144490000001" blue="0.37094759939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="7Oz-lN-0gK"/>
-                                    <constraint firstAttribute="width" constant="150" id="UKh-bZ-KAE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Back to Home">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="backToHome:" destination="RMA-67-V4Y" eventType="touchUpInside" id="T8C-gO-R4T"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y4g-KO-ZIU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Y4g-KO-ZIU" firstAttribute="bottom" secondItem="XnI-Po-qRd" secondAttribute="bottom" constant="30" id="28C-3b-e3d"/>
                             <constraint firstItem="EJ1-vO-gUl" firstAttribute="centerY" secondItem="Y4g-KO-ZIU" secondAttribute="centerY" id="Btw-zF-taC"/>
                             <constraint firstItem="EJ1-vO-gUl" firstAttribute="top" secondItem="eY6-4e-iw2" secondAttribute="bottom" constant="20" id="Inf-oI-kdP"/>
-                            <constraint firstItem="XnI-Po-qRd" firstAttribute="centerX" secondItem="Y4g-KO-ZIU" secondAttribute="centerX" id="L5E-74-d7U"/>
                             <constraint firstItem="Y4g-KO-ZIU" firstAttribute="trailing" secondItem="3ac-xU-Hte" secondAttribute="trailing" constant="25" id="LW0-Tt-YZv"/>
                             <constraint firstItem="3ac-xU-Hte" firstAttribute="centerX" secondItem="EJ1-vO-gUl" secondAttribute="centerX" id="Qr3-lA-3mc"/>
                             <constraint firstItem="EJ1-vO-gUl" firstAttribute="top" secondItem="FBy-ye-09G" secondAttribute="bottom" constant="10" id="VgG-r5-KxY"/>
@@ -653,33 +625,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjA-el-kgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3741" y="72"/>
+            <point key="canvasLocation" x="6194.202898550725" y="71.651785714285708"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="uYp-zX-uOS">
+        <scene sceneID="DkB-C1-bKt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1mD-yH-D0Z" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ciL-BL-Px0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="tjB-ip-RJ8">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="J4y-cz-nyt">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2K6-4W-a87"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kEu-bm-xIb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HIc-p0-kIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azT-Ri-fSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="71"/>
+            <point key="canvasLocation" x="1137.68115942029" y="70.982142857142847"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Artboard 2 copy 8" width="1171" height="2533"/>
-        <image name="Artboard 2 copy 9" width="1171" height="1991"/>
+        <image name="Artboard 2 copy 8" width="128" height="128"/>
         <image name="Camera- Take a Selfie" width="86" height="86"/>
         <image name="FRONT SIDE- 2" width="1061" height="702"/>
         <image name="Successful" width="96" height="96"/>
+        <image name="TaleSelfie" width="406" height="706"/>
         <image name="appstore" width="417" height="126"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
