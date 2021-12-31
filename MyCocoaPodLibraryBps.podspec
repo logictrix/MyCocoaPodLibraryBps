@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MyCocoaPodLibraryBps'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MyCocoaPodLibraryBps.'
+  s.summary          = 'This library use to scan docs of user.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,15 +28,23 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/logictrix/MyCocoaPodLibraryBps.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.swift_version = '5.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'MyCocoaPodLibraryBps/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MyCocoaPodLibraryBps' => ['MyCocoaPodLibraryBps/Assets/*.png']
-  # }
+   s.resource_bundles = {
+#     'Resources' => ['MyCocoaPodLibraryBps/Assets/Camera- Take a Selfie.png','MainFACEKI']
+     
+     'Resources' => ['MyCocoaPodLibraryBps/MainFACEKI.{png,storyboard,lproj}','MyCocoaPodLibraryBps/Assets/Faceki-Verifing-animation2.{gif}','MyCocoaPodLibraryBps/Assets/Scan ID front side.{png,jpg}','MyCocoaPodLibraryBps/Assets/Scan ID back side.{png,jpg}','MyCocoaPodLibraryBps/Assets/Take a selfie picture.{png,jpg}','MyCocoaPodLibraryBps/Assets/verifyAnimation.{png,jpg}','MyCocoaPodLibraryBps/Assets/VerifyBlurBack.{png,jpg}' ,'MyCocoaPodLibraryBps/Assets/appstore.{png,jpg}','MyCocoaPodLibraryBps/Assets/Extra Check Required.{png,jpg}','MyCocoaPodLibraryBps/Assets/Flip Camera.{png,jpg}','MyCocoaPodLibraryBps/Assets/Successful.{png,jpg}','MyCocoaPodLibraryBps/Assets/Passport black.{png,jpg}','MyCocoaPodLibraryBps/Assets/appstore1.{png,jpg}','MyCocoaPodLibraryBps/Assets/Driving back black.{png,jpg}','MyCocoaPodLibraryBps/Assets/Driving back.{png,jpg}','MyCocoaPodLibraryBps/Assets/Driving Front black.{png,jpg}','MyCocoaPodLibraryBps/Assets/Driving Front.{png,jpg}','MyCocoaPodLibraryBps/Assets/framesArtboard 1.{png,jpg}','MyCocoaPodLibraryBps/Assets/FRONT SIDE- 2.{png,jpg}','MyCocoaPodLibraryBps/Assets/Passport.{png,jpg}','MyCocoaPodLibraryBps/Assets/Camera- Take a Selfie.{png,jpg}','MyCocoaPodLibraryBps/Assets/Splash.{png,jpg}','MyCocoaPodLibraryBps/Assets/BACK SIDE -2.{png,jpg}','MyCocoaPodLibraryBps/Assets/TaleSelfie.{png,jpg}','MyCocoaPodLibraryBps/Assets/TaleSelfie1.{png,jpg}']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'UIKit', 'AVKit', 'AVFoundation', 'Vision'
+   s.dependency 'Alamofire', '~> 5.0'
+   s.dependency 'MBProgressHUD'
+   s.dependency 'IQKeyboardManagerSwift'
+   s.dependency 'SwiftyGif'
+   
+   
 end

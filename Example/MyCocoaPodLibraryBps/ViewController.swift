@@ -7,14 +7,23 @@
 //
 
 import UIKit
+import MyCocoaPodLibraryBps
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        let val = Logger()
+//        val.printLog()
+//        val.startFirstScreen()
     }
 
+    @IBAction func captureScan(_ sender: Any) {
+        let smManagerVC = Logger.initiateSMSDK()
+        navigationController?.pushViewController(smManagerVC, animated: true)
+//        present(smManagerVC, animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

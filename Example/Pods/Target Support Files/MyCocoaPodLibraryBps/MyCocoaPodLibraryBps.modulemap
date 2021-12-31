@@ -1,0 +1,6 @@
+framework module MyCocoaPodLibraryBps {
+  umbrella header "MyCocoaPodLibraryBps-umbrella.h"
+
+  export *
+  module * { export * }
+}

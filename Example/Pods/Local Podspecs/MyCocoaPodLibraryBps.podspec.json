@@ -1,0 +1,73 @@
+{
+  "name": "MyCocoaPodLibraryBps",
+  "version": "0.1.0",
+  "summary": "This library use to scan docs of user.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/logictrix/MyCocoaPodLibraryBps",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "logictrix": "b.singh@logictrixtech.com"
+  },
+  "source": {
+    "git": "https://github.com/logictrix/MyCocoaPodLibraryBps.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "MyCocoaPodLibraryBps/Classes/**/*",
+  "resource_bundles": {
+    "Resources": [
+      "MyCocoaPodLibraryBps/MainFACEKI.{png,storyboard,lproj}",
+      "MyCocoaPodLibraryBps/Assets/Faceki-Verifing-animation2.{gif}",
+      "MyCocoaPodLibraryBps/Assets/Scan ID front side.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Scan ID back side.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Take a selfie picture.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/verifyAnimation.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/VerifyBlurBack.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/appstore.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Extra Check Required.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Flip Camera.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Successful.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Passport black.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/appstore1.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Driving back black.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Driving back.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Driving Front black.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Driving Front.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/framesArtboard 1.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/FRONT SIDE- 2.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Passport.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Camera- Take a Selfie.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Splash.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/BACK SIDE -2.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/TaleSelfie.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/TaleSelfie1.{png,jpg}"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "AVKit",
+    "AVFoundation",
+    "Vision"
+  ],
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.0"
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "IQKeyboardManagerSwift": [
+
+    ],
+    "SwiftyGif": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

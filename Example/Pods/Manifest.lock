@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (5.5.0)
+  - IQKeyboardManagerSwift (6.5.9)
+  - MBProgressHUD (1.2.0)
+  - MyCocoaPodLibraryBps (0.1.0):
+    - Alamofire (~> 5.0)
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - SwiftyGif
+  - SwiftyGif (5.4.2)
+
+DEPENDENCIES:
+  - MyCocoaPodLibraryBps (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - SwiftyGif
+
+EXTERNAL SOURCES:
+  MyCocoaPodLibraryBps:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MyCocoaPodLibraryBps: b3bf19f8f76bd7d98678dd7539ffa141046b064b
+  SwiftyGif: dec758a9dd3d278e5a855dbf279bf062c923c387
+
+PODFILE CHECKSUM: d476026a345867a61b8858fd2f33ab9b985bcd1f
+
+COCOAPODS: 1.11.2
