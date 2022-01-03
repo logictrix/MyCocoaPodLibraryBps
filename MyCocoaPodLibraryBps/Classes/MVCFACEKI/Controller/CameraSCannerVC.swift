@@ -28,12 +28,18 @@ import Vision
 
 class CameraSCannerVC: UIViewController {
 
+    @IBOutlet weak var powerByImgView: UIImageView!
     @IBOutlet weak var sidePlaceholderImgView: UIImageView!
     @IBOutlet weak var headTitleLbl: UILabel!
     @IBOutlet weak var sideTextLbl: UILabel!
     @IBOutlet weak var infoLbl: UILabel!
     @IBOutlet weak var backCamView: UIView!
     @IBOutlet weak var logoTopConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var topImg: UIImageView!
+    @IBOutlet weak var scanerWindowImg: UIImageView!
+    
+    @IBOutlet weak var cameraBtn: UIButton!
     
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var videoCaptureDevice: AVCaptureDevice?
@@ -73,15 +79,31 @@ class CameraSCannerVC: UIViewController {
     
     var scannerTimer: Timer?
     
-//    var frontSideScanedImagesArry = [UIImage]()
-//    var backSideScanedImagesArry = [UIImage]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-//        backCamView.addGestureRecognizer(tap)
         logoTopConstraint.constant = UIScreen.main.bounds.height*0.35
-      setLayoutValues()
+        setLayoutValues()
+        let img = UIImage(named: "Artboard 2 copy 8", in: resourcesBundleImg, compatibleWith: nil)
+        topImg.image = img
+        scanerWindowImg.image = img
+        
+        let imgPowerBy = UIImage(named: "appstore", in: resourcesBundleImg, compatibleWith: nil)
+        powerByImgView.image = imgPowerBy
+        
+        let imgCamera = UIImage(named: "Camera- Take a Selfie", in: resourcesBundleImg, compatibleWith: nil)
+        cameraBtn.setBackgroundImage(imgCamera, for: .normal)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        landscape = false
+        isRotation = true
+       
+        DispatchQueue.main.async {
+            print("View Will Appaper")
+            self.startCamera(caputreMode: "Potrait")
+            self.session?.startRunning()
+        }
+        startTimer()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -110,41 +132,34 @@ class CameraSCannerVC: UIViewController {
         
         if headTitleLbl.text == "Scan your ID Card" {
             if DataManager.isFromtScanComplete == true {
-                sidePlaceholderImgView.image = UIImage(named: "BACK SIDE -2")
+                let imgCardBack = UIImage(named: "BACK SIDE -2", in: resourcesBundleImg, compatibleWith: nil)
+                sidePlaceholderImgView.image = imgCardBack
                 sideTextLbl.text = "BACK SIDE"
             }
             else {
-                sidePlaceholderImgView.image = UIImage(named: "FRONT SIDE- 2")
+                let imgCardFront = UIImage(named: "FRONT SIDE- 2", in: resourcesBundleImg, compatibleWith: nil)
+                sidePlaceholderImgView.image = imgCardFront
                 sideTextLbl.text = "FRONT SIDE"
             }
         }
         else if headTitleLbl.text == "Scan your Passport" {
-            sidePlaceholderImgView.image = UIImage(named: "Passport")
+            let imgPassport = UIImage(named: "Passport", in: resourcesBundleImg, compatibleWith: nil)
+            sidePlaceholderImgView.image = imgPassport
             sideTextLbl.text = "PASSPORT"
         }
         else if headTitleLbl.text == "Scan your Driving License" {
             if DataManager.isFromtScanComplete == true {
-                sidePlaceholderImgView.image = UIImage(named: "Driving back")
+                let imgLicenseBack = UIImage(named: "Driving back", in: resourcesBundleImg, compatibleWith: nil)
+                sidePlaceholderImgView.image = imgLicenseBack
                 sideTextLbl.text = "BACK SIDE"
             }
             else {
-                sidePlaceholderImgView.image = UIImage(named: "Driving Front")
+                let imgLicenseFrnt = UIImage(named: "Driving Front", in: resourcesBundleImg, compatibleWith: nil)
+                sidePlaceholderImgView.image = imgLicenseFrnt
                 sideTextLbl.text = "FRONT SIDE"
             }
         }
         infoLbl.text = CommonFunctions.getInfoLabelText()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        landscape = false
-        isRotation = true
-       
-        DispatchQueue.main.async {
-            print("View Will Appaper")
-            self.startCamera(caputreMode: "Potrait")
-            self.session?.startRunning()
-        }
-        startTimer()
     }
     
     func startCamera(caputreMode: String){
@@ -226,7 +241,8 @@ class CameraSCannerVC: UIViewController {
     @IBAction func camraBtnAction(_ sender: UIButton) {
         isCapturePressed = true
         detectFaces(img: imageCapture)
-//        cameraActionMethod()
+//        let vc = Storyboard.instantiateViewController(withIdentifier: "CheckReadablityVC") as! CheckReadablityVC
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func cameraActionMethod(){
@@ -267,9 +283,6 @@ extension CameraSCannerVC: AVCaptureVideoDataOutputSampleBufferDelegate {
             image = convert(cmage:ciImageWithOrientation)
         }
         
-        DispatchQueue.main.async {
-//            self.headImag.image = image
-        }
         imageCapture = image
         detectFaces(img: image)
     }
@@ -313,27 +326,7 @@ extension CameraSCannerVC: AVCaptureVideoDataOutputSampleBufferDelegate {
                 guard let faceObservation = res as? VNDetectedObjectObservation else {return}
                
                 DispatchQueue.main.async {
-                    
-//                        self.viewAd = self.createBttn()
-//                        self.viewAd.frame = self.transformRect(fromRect: faceObservation.boundingBox, toViewRect: self.backCamView)
-//
-//                    print("self.viewAd.frame.origin.x ",self.viewAd.frame.origin.x)
-//                    print("self.viewAd.frame.origin.y ",self.viewAd.frame.origin.y)
-//                    print("self.viewAd.frame.width ",faceObservation.boundingBox.width)
-//
-////                        self.viewAd.addTarget(self, action: #selector(CameraSCannerVC.webButtonTouched(_:)), for: .touchDown)
-//                        self.viewAd.params["img"] = img
-//                        self.viewAd.params["BoundingBox"] = faceObservation.boundingBox
-//                        self.viewAd.params["originX"] = faceObservation.boundingBox.origin.x
-//                        self.viewAd.params["originY"] = faceObservation.boundingBox.origin.y
-//                        self.viewAd.params["height"] = faceObservation.boundingBox.height
-//                        self.viewAd.params["width"] = faceObservation.boundingBox.width
-//
-//
-//                    print("self.viewAd.frame.origin.x AF",self.viewAd.frame.origin.x-20)
-//                    print("self.viewAd.frame.origin.y AF",self.viewAd.frame.origin.y)
-//                    print("self.viewAd.frame.width AF",faceObservation.boundingBox.width+40)
-                    
+                
                     if self.isCapturePressed == true {
                         self.isCapturePressed = false
                         self.session?.stopRunning()

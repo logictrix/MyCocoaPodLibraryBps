@@ -9,6 +9,11 @@ import UIKit
 
 class DocsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageLeading: NSLayoutConstraint!
+    @IBOutlet weak var lblLeading: NSLayoutConstraint!
+    @IBOutlet weak var imageheight: NSLayoutConstraint!
+    @IBOutlet weak var imageWidth: NSLayoutConstraint!
+    
     @IBOutlet weak var holderVw_1: UIView!
     @IBOutlet weak var seriesLbl_1: UILabelCustomClass!
     @IBOutlet weak var docPhotoVw_1: UIImageView!

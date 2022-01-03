@@ -22,7 +22,7 @@
   "source_files": "MyCocoaPodLibraryBps/Classes/**/*",
   "resource_bundles": {
     "Resources": [
-      "MyCocoaPodLibraryBps/MainFACEKI.{png,storyboard,lproj}",
+      "MyCocoaPodLibraryBps/MainFACEKI.{png,storyboard,lproj,gif}",
       "MyCocoaPodLibraryBps/Assets/Faceki-Verifing-animation2.{gif}",
       "MyCocoaPodLibraryBps/Assets/Scan ID front side.{png,jpg}",
       "MyCocoaPodLibraryBps/Assets/Scan ID back side.{png,jpg}",
@@ -46,7 +46,11 @@
       "MyCocoaPodLibraryBps/Assets/Splash.{png,jpg}",
       "MyCocoaPodLibraryBps/Assets/BACK SIDE -2.{png,jpg}",
       "MyCocoaPodLibraryBps/Assets/TaleSelfie.{png,jpg}",
-      "MyCocoaPodLibraryBps/Assets/TaleSelfie1.{png,jpg}"
+      "MyCocoaPodLibraryBps/Assets/TaleSelfie1.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Artboard 2 copy 8.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/Artboard 2 copy 9.{png,jpg}",
+      "MyCocoaPodLibraryBps/Assets/24-approved-checked-outline.{gif}",
+      "MyCocoaPodLibraryBps/Assets/25-error-cross-outline.{gif}"
     ]
   },
   "frameworks": [

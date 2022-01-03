@@ -9,7 +9,9 @@ import UIKit
 
 class CheckReadablityVC: UIViewController {
 
+    @IBOutlet weak var powerByImgView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
+    
     var captureImage = UIImage()
     
     var frontSideScanedImagesArry = [UIImage]()
@@ -26,6 +28,9 @@ class CheckReadablityVC: UIViewController {
         backSideScanedImagesArry.removeAll()
         backSideScanedImagesArry = CommonFunctions.getTargetList(keyName: "BackScanImages")
         print("backSideScanedImagesArry append",backSideScanedImagesArry)
+        
+        let imgPowerBy = UIImage(named: "appstore", in: resourcesBundleImg, compatibleWith: nil)
+        powerByImgView.image = imgPowerBy
     }
     
     @IBAction func retakeBtnAction(_ sender: Any) {
@@ -60,16 +65,12 @@ class CheckReadablityVC: UIViewController {
             
             if numberOfScannedDoc == DataManager.numberOfDoc {
                 let vc = Storyboard.instantiateViewController(withIdentifier: "TakeSelfieVC") as! TakeSelfieVC
-//                vc.backSideScanedImagesArry = backSideScanedImagesArry
-//                vc.frontSideScanedImagesArry = frontSideScanedImagesArry
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             else {
                 DataManager.isFromtScanComplete = false
                 DataManager.isBackScanComplete = false
                 let vc = Storyboard.instantiateViewController(withIdentifier: "CameraSCannerVC") as! CameraSCannerVC
-//                vc.backSideScanedImagesArry = backSideScanedImagesArry
-//                vc.frontSideScanedImagesArry = frontSideScanedImagesArry
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }

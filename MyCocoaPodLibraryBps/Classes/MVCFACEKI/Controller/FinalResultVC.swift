@@ -9,7 +9,7 @@ import UIKit
 
 class FinalResultVC: UIViewController {
 
-    
+    @IBOutlet weak var resultImge: UIImageView!
     @IBOutlet weak var imageGifVw: UIView!
     
     @IBOutlet weak var resultLbl: UILabel!
@@ -22,27 +22,26 @@ class FinalResultVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if isSuccess == true {
             linkLbl.isHidden = true
-            startLoaderGif(gifName: "24-approved-checked-outline")
+//            startLoaderGif(gifName: "24-approved-checked-outline")
+            
+            let imgSucces = UIImage(named: "Successful", in: resourcesBundleImg, compatibleWith: nil)
+            resultImge.image = imgSucces
+            
             resultLbl.text = "SUCCESSFUL"
             resulInfotLbl.text = "\(DataManager.successMeaasge ?? "Process is complete check dashboard for details.")"
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                guard let url = URL(string: "\(DataManager.successRedirectUrl!)") else { return }
-                UIApplication.shared.open(url)
-            }
         }
         else {
             linkLbl.isHidden = false
             linkLbl.text = errorMsg
-            startLoaderGif(gifName: "25-error-cross-outline")
+            
+            let imgInvalid = UIImage(named: "Extra Check Required", in: resourcesBundleImg, compatibleWith: nil)
+            resultImge.image = imgInvalid
+            
+//            startLoaderGif(gifName: "25-error-cross-outline")
             resultLbl.text = "DECLINED"
             resulInfotLbl.text = "\(DataManager.declinedMessage ?? "Process is complete check dashboard for details.")"
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                guard let url = URL(string: "\(DataManager.declinedRedirectUrl!)") else { return }
-                UIApplication.shared.open(url)
-            }
         }
         
         let emptyImagesArry = [UIImage]()
@@ -50,15 +49,16 @@ class FinalResultVC: UIViewController {
         CommonFunctions.archive(customObject: emptyImagesArry, keyName: "BackScanImages")
     }
     
-//    func navigateAfterScan(){
-//        if numberOfScannedDoc < DataManager.numberOfDoc! {
-//            DataManager.isFromtScanComplete = false
-//            DataManager.isBackScanComplete = false
-//
-//            let vc = Storyboard.instantiateViewController(withIdentifier: "CameraSCannerVC") as! CameraSCannerVC
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//    }
+    @IBAction func backToHome(_ sender: Any) {
+        self.navigateToStart()
+    }
+    
+    func navigateToStart(){
+        DataManager.isFromtScanComplete = false
+        DataManager.isBackScanComplete = false
+        
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     
     func startLoaderGif(gifName: String){
         DispatchQueue.main.async {

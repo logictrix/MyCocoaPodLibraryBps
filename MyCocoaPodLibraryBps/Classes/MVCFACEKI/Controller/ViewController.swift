@@ -105,6 +105,11 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DocsTableViewCell", for: indexPath) as! DocsTableViewCell
         
         let dict = scanDocsArray[indexPath.item]
+        if dict["docName"] as? String ?? "Scan ID front side" == "Take a selfie picture"{
+            cell.imageWidth.constant = 60
+            cell.lblLeading.constant = 35
+            cell.imageLeading.constant = 40
+        }
         
         cell.seriesLbl_1.text = "\(indexPath.item+1)"
         

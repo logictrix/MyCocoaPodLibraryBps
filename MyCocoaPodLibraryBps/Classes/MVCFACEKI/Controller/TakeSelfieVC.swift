@@ -12,7 +12,10 @@ import Vision
 
 class TakeSelfieVC: BaseViewController {
 
+    @IBOutlet weak var powerByImgView: UIImageView!
     @IBOutlet weak var camView: UIView!
+    @IBOutlet weak var selfiImgVw: UIImageView!
+    @IBOutlet weak var cameraBtn: UIButton!
     
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var videoCaptureDevice: AVCaptureDevice?
@@ -67,6 +70,16 @@ class TakeSelfieVC: BaseViewController {
         
         print("frontSideScanedImagesArry.count ",frontSideScanedImagesArry.count)
         print("backSideScanedImagesArry.count ",backSideScanedImagesArry.count)
+        
+        
+        let img = UIImage(named: "Artboard 2 copy 9", in: resourcesBundleImg, compatibleWith: nil)
+        selfiImgVw.image = img
+        
+        let imgPowerBy = UIImage(named: "appstore", in: resourcesBundleImg, compatibleWith: nil)
+        powerByImgView.image = imgPowerBy
+        
+        let imgCamera = UIImage(named: "Camera- Take a Selfie", in: resourcesBundleImg, compatibleWith: nil)
+        cameraBtn.setBackgroundImage(imgCamera, for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,6 +96,8 @@ class TakeSelfieVC: BaseViewController {
     //MARK:- Camra Button Action
     @IBAction func camraBtnAction(_ sender: UIButton) {
         detectFaces(img: imageCapture)
+//        let vc = Storyboard.instantiateViewController(withIdentifier: "FinalResultVC") as! FinalResultVC
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func startCamera(caputreMode: String){
