@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Your Identity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMX-To-kjG">
-                                <rect key="frame" x="124.5" y="118" width="165" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Your Identity 0.3.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMX-To-kjG">
+                                <rect key="frame" x="100" y="118" width="214" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="RRw-5p-XvY"/>
                                 </constraints>
@@ -605,7 +605,7 @@
                                     <constraint firstAttribute="height" constant="150" id="rFR-03-apS"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5D-O6-XJQ" customClass="UIButtonCustomClass" customModule="FaceKi" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5D-O6-XJQ" customClass="UIButtonCustomClass" customModule="MyCocoaPodLibraryBps" customModuleProvider="target">
                                 <rect key="frame" x="132" y="798" width="150" height="34"/>
                                 <color key="backgroundColor" red="0.27542012929999998" green="0.29671144490000001" blue="0.37094759939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

@@ -54,6 +54,7 @@ class FinalResultVC: UIViewController {
     }
     
     func navigateToStart(){
+        numberOfScannedDoc = 0
         DataManager.isFromtScanComplete = false
         DataManager.isBackScanComplete = false
         
