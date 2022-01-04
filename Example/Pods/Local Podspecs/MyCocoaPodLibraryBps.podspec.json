@@ -23,7 +23,7 @@
   "resource_bundles": {
     "Resources": [
       "MyCocoaPodLibraryBps/MainFACEKI.{png,storyboard,lproj,gif}",
-      "MyCocoaPodLibraryBps/Assets/Faceki-Verifing-animation2.{gif}",
+      "MyCocoaPodLibraryBps/Faceki-Verifing-animation2.{gif}",
       "MyCocoaPodLibraryBps/Assets/Scan ID front side.{png,jpg}",
       "MyCocoaPodLibraryBps/Assets/Scan ID back side.{png,jpg}",
       "MyCocoaPodLibraryBps/Assets/Take a selfie picture.{png,jpg}",
@@ -49,8 +49,8 @@
       "MyCocoaPodLibraryBps/Assets/TaleSelfie1.{png,jpg}",
       "MyCocoaPodLibraryBps/Assets/Artboard 2 copy 8.{png,jpg}",
       "MyCocoaPodLibraryBps/Assets/Artboard 2 copy 9.{png,jpg}",
-      "MyCocoaPodLibraryBps/Assets/24-approved-checked-outline.{gif}",
-      "MyCocoaPodLibraryBps/Assets/25-error-cross-outline.{gif}"
+      "MyCocoaPodLibraryBps/24-approved-checked-outline.{gif}",
+      "MyCocoaPodLibraryBps/25-error-cross-outline.{gif}"
     ]
   },
   "frameworks": [

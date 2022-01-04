@@ -27,7 +27,7 @@ SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MyCocoaPodLibraryBps: aaa5c4eabe797dd6b0ad027eb74ec9c1614f1c6b
+  MyCocoaPodLibraryBps: a9dce7dc0f446166e1ea9321e65d0ed5a1b2b0dd
   SwiftyGif: dec758a9dd3d278e5a855dbf279bf062c923c387
 
 PODFILE CHECKSUM: d476026a345867a61b8858fd2f33ab9b985bcd1f
