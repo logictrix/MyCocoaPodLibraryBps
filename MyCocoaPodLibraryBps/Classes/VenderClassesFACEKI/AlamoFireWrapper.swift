@@ -32,7 +32,7 @@ class AlamoFireWrapper: NSObject {
 
         let headers: HTTPHeaders = [
             "Content-type": "application/json",
-            "Authorization": "Bearer \(DataManager.authorizationTokken ?? "NA")"
+            "Authorization": "Bearer \(authorizationTokken ?? "NA")"
         ]
         print("headers ",headers)
        
@@ -120,7 +120,7 @@ class AlamoFireWrapper: NSObject {
         let headers: HTTPHeaders = [
             "Content-type": "application/json",
             "Accept": "application/json",
-            "Authorization": "Bearer \(DataManager.authorizationTokken ?? "NA")"
+            "Authorization": "Bearer \(authorizationTokken ?? "NA")"
         ]
         print("headers ",headers)
         
@@ -186,7 +186,7 @@ class AlamoFireWrapper: NSObject {
         let headers: HTTPHeaders = [
             "Content-type": "application/json",
             "Accept": "application/json",
-            "Authorization": "Bearer \(DataManager.authorizationTokken ?? "NA")"
+            "Authorization": "Bearer \(authorizationTokken ?? "NA")"
         ]
         print("headers ",headers)
         

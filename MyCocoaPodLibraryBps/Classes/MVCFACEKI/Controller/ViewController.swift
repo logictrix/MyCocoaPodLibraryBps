@@ -23,13 +23,7 @@ class ViewController: BaseViewController {
         DataManager.isFromtScanComplete = false
         DataManager.isBackScanComplete = false
         
-        let token = DataManager.authorizationTokken ?? ""
-        if token.count > 3 {
-            getSDKsettingsApiHit()
-        }
-        else {
-            getUserTokenApiHit()
-        }
+        getUserTokenApiHit()
         
         scanbleDcosTabl.register(UINib(nibName: "DocsTableViewCell", bundle: frameworkBundle), forCellReuseIdentifier: "DocsTableViewCell")
         scanbleDcosTabl.tableFooterView = UIView()
@@ -46,8 +40,7 @@ class ViewController: BaseViewController {
                                         currentVC: self, onSuccess: { (response) in
                         print("get User Token Api Hit Response ",response)
                 if let token = response["token"] as? String {
-                    DataManager.authorizationTokken = token
-                    
+                    authorizationTokken = token
                     self.getSDKsettingsApiHit()
                 }
         })

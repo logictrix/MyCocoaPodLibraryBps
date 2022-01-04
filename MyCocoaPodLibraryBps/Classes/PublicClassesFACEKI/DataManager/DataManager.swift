@@ -178,17 +178,6 @@ class DataManager{
         }
     }
     
-    
-    static var authorizationTokken:String? {
-        set {
-            UserDefaults.standard.setValue(newValue, forKey: "AuthorizationTokken")
-            UserDefaults.standard.synchronize()
-        }
-        get {
-            return UserDefaults.standard.string(forKey: "AuthorizationTokken")
-        }
-    }
-
     static var userId:String? {
         set {
             UserDefaults.standard.setValue(newValue, forKey: "UserId")
